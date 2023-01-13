@@ -1,6 +1,5 @@
 package application;
 
-import java.util.Date;
 import java.util.List;
 
 import model.dao.DaoFactory;
@@ -45,6 +44,11 @@ public class Program {
 		seller.setName("Martha Waine");
 		sellerDao.update(seller);
 		System.out.println("Update completed");
+		
+		System.out.println("TEST 6: seller update");
+		sellerDao.deleteById(8);
+		System.out.println("Deleted Completed");
+
 
 	}
 
